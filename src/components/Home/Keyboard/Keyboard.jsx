@@ -7,15 +7,6 @@ import {
 } from '../../../redux/actions';
 import { useAlert } from 'react-alert';
 import { useSelector } from 'react-redux';
-const KeyboardRows = ({ rows }) => {
-  return (
-    <div className={Style.keyboardRows}>
-      {rows.map((keyrow, index) => {
-        return <KeyboardKey keyrow={keyrow} key={index} />;
-      })}
-    </div>
-  );
-};
 const KeyboardKey = ({ keyrow }) => {
   const alert = useAlert();
   const dispatch = useDispatch();
@@ -45,6 +36,15 @@ const KeyboardKey = ({ keyrow }) => {
   return (
     <div onClick={() => _clickKey(keyrow)} className={Style.keyboardKey}>
       {keyrow}
+    </div>
+  );
+};
+const KeyboardRows = ({ rows }) => {
+  return (
+    <div className={Style.keyboardRows}>
+      {rows.map((keyrow, index) => {
+        return <KeyboardKey keyrow={keyrow} key={index} />;
+      })}
     </div>
   );
 };

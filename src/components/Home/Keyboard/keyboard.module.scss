@@ -26,3 +26,8 @@
     height: 50px;
   }
 }
+@media only screen and (min-height: 400px) {
+  .keyboardKey {
+    padding: 0rem 0.4rem !important;
+  }
+}
