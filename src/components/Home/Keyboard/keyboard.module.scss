@@ -1,0 +1,28 @@
+.keyboard {
+  width: 100%;
+}
+.keyboardKey {
+  margin: 0 6px 5px 0;
+  height: 58px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #818384;
+  color: #d7dadc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0rem 1rem;
+}
+.keyboardRows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+  .keyboardKey {
+    padding: 0rem 0.6rem !important;
+    height: 50px;
+  }
+}
