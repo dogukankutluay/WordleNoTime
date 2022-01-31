@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className={Style.header}>
       <HelpIcon />
-      <h1>WORDLE TR</h1>
+      <h1>WORDLE NO TIME(TR)</h1>
       <SettingsIcon />
     </div>
   );
